@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Haircut",
+		"description": "Potong rambut dengan teknik profesional.",
+		"price": 50000,
+		"image": "/img/haircut.jpg"
+	},
+	{
+		"name": "Shaving",
+		"description": "Cukur jenggot dan kumis dengan hasil rapi.",
+		"price": 30000,
+		"image": "/img/haircut.jpg"
+	},
+	{
+		"name": "Hair Coloring",
+		"description": "Pewarnaan dengan berbagai pilihan warna.",
+		"price": 120000,
+		"image": "/img/haircut.jpg"
+	},
+	{
+		"name": "Facial",
+		"description": "Perawatan wajah untuk kulit yang lebih segar.",
+		"price": 80000,
+		"image": "/img/haircut.jpg"
+	}
+]

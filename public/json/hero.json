@@ -1,0 +1,20 @@
+{
+	"title": "Where Every Style Matters",
+	"description": [
+		"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		"Ratione veritatis natus sapiente tenetur facilis dolore, voluptas omnis repellat aspernatur error iure ipsum repellendus adipisci earum suscipit fugiat doloribus. Officiis."
+	],
+	"download_links": {
+		"playstore": "https://play.google.com/store/apps/details?id=your.app.id",
+		"appstore": "https://apps.apple.com/app/idyourappid"
+	},
+	"images": [
+		"/img/portrait1.png",
+		"/img/portrait2.png",
+		"/img/portrait3.png"
+	],
+	"booking": {
+		"label": "Book Now",
+		"placeholder": "Select Date & Time"
+	}
+}

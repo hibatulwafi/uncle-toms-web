@@ -1,0 +1,97 @@
+{
+  "logo": "/img/ut-logo.png",
+  "description": "We offer stylish cuts, clean shaves, and relaxing treatments, Where Every Style Matters.",
+  "socials": [
+    {
+      "platform": "Facebook",
+      "link": "https://facebook.com",
+      "icon": "lni lni-facebook-fill"
+    },
+    {
+      "platform": "Twitter",
+      "link": "https://twitter.com",
+      "icon": "lni lni-twitter-original"
+    },
+    {
+      "platform": "Instagram",
+      "link": "https://instagram.com",
+      "icon": "lni lni-instagram-original"
+    },
+    {
+      "platform": "LinkedIn",
+      "link": "https://linkedin.com",
+      "icon": "lni lni-linkedin-original"
+    }
+  ],
+  "menus": [
+    {
+      "title": "About",
+      "links": [
+        {
+          "text": "Our Story",
+          "url": "/about"
+        },
+        {
+          "text": "Our Services",
+          "url": "/services"
+        },
+        {
+          "text": "Meet Our Barbers",
+          "url": "/team"
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "links": [
+        {
+          "text": "Karir",
+          "url": "/gallery"
+        },
+        {
+          "text": "Mitra",
+          "url": "/gallery"
+        },
+        {
+          "text": "Gallery",
+          "url": "/gallery"
+        }
+      ]
+    },
+    {
+      "title": "Contact",
+      "links": [
+        {
+          "text": "+1 234 567 89",
+          "url": "tel:+123456789",
+          "icon": "lni lni-phone"
+        },
+        {
+          "text": "info@barbershop.com",
+          "url": "mailto:info@barbershop.com",
+          "icon": "lni lni-envelope"
+        },
+        {
+          "text": "Find Us",
+          "url": "/location",
+          "icon": "lni lni-map-marker"
+        }
+      ]
+    }
+  ],
+  "legal": [
+    {
+      "text": "Privacy Policy",
+      "url": "/privacy-policy"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "/terms-of-service"
+    },
+    {
+      "text": "Legal Notice",
+      "url": "/legal"
+    }
+  ],
+  "copyright": "© 2025 Uncle Tom's. All rights reserved."
+}

@@ -1,0 +1,58 @@
+{
+  "casters": [
+    {
+      "id": 1,
+      "name": "Garret Edwards",
+      "role": "Master Barber",
+      "image": "/img/avatar/avatar-1.jpg",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "link": "https://facebook.com",
+          "icon": "lni lni-facebook-fill"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://instagram.com",
+          "icon": "lni lni-instagram-original"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jonathan Leeson",
+      "role": "Hair Stylist",
+      "image": "/img/avatar/avatar-2.jpg",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "link": "https://facebook.com",
+          "icon": "lni lni-facebook-fill"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://instagram.com",
+          "icon": "lni lni-instagram-original"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Joe Russell",
+      "role": "Fade Specialist",
+      "image": "/img/avatar/avatar-3.jpg",
+      "socials": [
+        {
+          "platform": "Facebook",
+          "link": "https://facebook.com",
+          "icon": "lni lni-facebook-fill"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://instagram.com",
+          "icon": "lni lni-instagram-original"
+        }
+      ]
+    }
+  ]
+}

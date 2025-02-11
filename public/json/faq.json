@@ -1,0 +1,24 @@
+{
+  "faqs": [
+    {
+      "question": "What are your opening hours?",
+      "answer": "We are open Monday to Saturday from 9 AM to 8 PM and Sunday from 10 AM to 6 PM."
+    },
+    {
+      "question": "Do I need to book an appointment?",
+      "answer": "Walk-ins are welcome, but we recommend booking an appointment to avoid waiting times."
+    },
+    {
+      "question": "What services do you offer?",
+      "answer": "We offer haircuts, beard trims, shaves, and hair styling services for all hair types."
+    },
+    {
+      "question": "Do you offer kids' haircuts?",
+      "answer": "Yes, we provide haircuts for children of all ages."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept cash, credit/debit cards, and mobile payment options."
+    }
+  ]
+}

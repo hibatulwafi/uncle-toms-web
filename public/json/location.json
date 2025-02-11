@@ -1,0 +1,53 @@
+{
+	"categories": [
+		{
+			"label": "All Branches",
+			"value": "all"
+		},
+		{
+			"label": "Jakarta",
+			"value": "jakarta"
+		},
+		{
+			"label": "Bekasi",
+			"value": "bekasi"
+		}
+	],
+	"locations": [
+		{
+			"id": 1,
+			"title": "Uncle Tom`s Joglo",
+			"category": "jakarta",
+			"image": "/img/branches/branches.jpg",
+			"description": "Jl. Joglo Raya No.10A, Kec. Kembangan, Kota Jakarta Barat."
+		},
+		{
+			"id": 2,
+			"title": "Uncle Tom`s Cipete",
+			"category": "jakarta",
+			"image": "/img/branches/branches.jpg",
+			"description": "Jl. Cipete Raya No.2C, Kec. Cilandak, Kota Jakarta Selatan."
+		},
+		{
+			"id": 3,
+			"title": "Uncle Tom`s Pondok Kelapa",
+			"category": "jakarta",
+			"image": "/img/branches/branches.jpg",
+			"description": "Jl. Pd. Kelapa Raya No.Kav. No. 5 Blok B1, Kota Jakarta Timur."
+		},
+		{
+			"id": 4,
+			"title": "Uncle Tom`s Grand Galaxy",
+			"category": "bekasi",
+			"image": "/img/branches/branches.jpg",
+			"description": "Grand Galaxy, Ruko Sporadis, Jl. Boulevard Raya blok BD 132 B, Kec. Bekasi Sel."
+		},
+		{
+			"id": 5,
+			"title": "Uncle Tom`s Harapan Indah",
+			"category": "bekasi",
+			"image": "/img/branches/branches.jpg",
+			"description": "Jl. Boulevard Hijau Raya No.29 Blok B1, Kota Bks, Jawa Barat."
+		}
+	]
+}

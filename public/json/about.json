@@ -1,0 +1,19 @@
+{
+  "title": "About Us",
+  "subtitle": "Where Every Style Matters",
+  "image": "/img/about-image-1.png",
+  "profile": "At Uncle Tom's, we are more than just a barbershop—we are a hub for style and confidence. Our expert barbers are dedicated to delivering top-tier haircuts, beard trims, and grooming services, ensuring that every client walks out looking and feeling their best.",
+  "vision": {
+    "description": "Our vision is to redefine men’s grooming by providing an experience that is both relaxing and stylish. We believe that every haircut should be an expression of personality and confidence.",
+    "goals": [
+      "Provide exceptional and personalized grooming services.",
+      "Foster a comfortable and welcoming atmosphere.",
+      "Stay ahead of trends while honoring classic styles."
+    ]
+  },
+  "history": {
+    "founded": "2024",
+    "description": "Founded in 2024, Uncle Tom's started as a small barbershop with a big dream: to bring premium grooming services to the community. Over the years, we have built a reputation for precision, quality, and customer satisfaction.",
+    "growth": "Through dedication and passion, we have grown into a trusted destination for men’s grooming, serving hundreds of loyal customers who seek style, comfort, and expertise in every visit."
+  }
+}
