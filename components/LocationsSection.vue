@@ -1,11 +1,11 @@
 <template>
-  <section id="branches" class="section-area">
+  <section id="branches" class="section-area bg-body-light-12 dark:bg-body-dark-1">
     <div class="container">
       <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
-        <h6 class="mb-2 block text-lg font-semibold text-primary">
+        <h6 class="mb-2 block text-lg font-medium">
           Branches
         </h6>
-        <h2 class="mb-6">Our Barber Spots</h2>
+        <h2 class="mb-6 custom-text-gold">Our Barber Spots</h2>
         <p>
           There are many variations of passages of Lorem Ipsum available but
           the majority have suffered alteration in some form.
@@ -14,7 +14,7 @@
 
       <nav class="scroll-revealed portfolio-menu mb-[3.750rem] text-center" aria-label="Portfolio filter">
         <button v-for="category in categories" :key="category.value" type="button"
-          class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+          class="font-medium mx-2 px-5 py-2 rounded-md text-body-light-5 dark:text-body-dark-1 bg-gold hover:brightness-110 hover:text-golden focus:text-primary-color"
           :class="{ 'active': activeCategory === category.value }" @click="filterItems(category.value)">
           {{ category.label }}
         </button>
@@ -30,7 +30,7 @@
                 <div class="flex flex-wrap gap-2 p-4">
                   <div class="inline-block relative">
                     <a :href="item.image"
-                      class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center">
+                      class="portfolio-box text-[1.75rem] text-primary-color bg-gold hover:brightness-110 z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center">
                       <i class="lni lni-map"></i>
                     </a>
                   </div>

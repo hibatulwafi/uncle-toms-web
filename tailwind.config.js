@@ -51,10 +51,10 @@ module.exports = {
             12: "#d5e2ff",
           },
         },
-        gold: {
-          DEFAULT: "#d4a373",
-          light: "#e5bf96",
-          dark: "#b08968",
+        golden: {
+          DEFAULT: "#F59E0B",
+          light: "#F59E0B",
+          dark: "#F59E0B",
         },
         body: {
           light: {
@@ -104,6 +104,9 @@ module.exports = {
       boxShadow: {
         "card-1": "0px 0px 40px 0px rgba(0, 0, 0, 0.08)",
         "card-2": "0px 10px 20px 0 rgba(0, 0, 0, 0.08)",
+      },
+      backgroundImage: {
+        gold: "linear-gradient(to right, #FACC15, #F59E0B, #D97706)",
       },
     },
   },

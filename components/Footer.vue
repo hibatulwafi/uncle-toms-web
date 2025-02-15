@@ -11,7 +11,7 @@
             <p class="mb-4 text-body-dark-11">{{ footerData.description }}</p>
             <div class="-mx-3 flex items-center">
               <a v-for="social in footerData.socials" :key="social.platform" :href="social.link"
-                class="px-3 text-body-dark-11 hover:text-primary text-[22px]">
+                class="px-3 text-body-dark-11 hover:text-black text-[22px]">
                 <i :class="social.icon"></i>
               </a>
             </div>
@@ -21,10 +21,10 @@
         <!-- Menu -->
         <div v-for="menu in footerData.menus" :key="menu.title" class="col-12 lg:col-2">
           <div class="w-full">
-            <h4 class="mb-9 text-lg font-semibold text-inherit">{{ menu.title }}</h4>
+            <h4 class="mb-9 text-lg font-semibold custom-text-gold">{{ menu.title }}</h4>
             <ul>
               <li v-for="link in menu.links" :key="link.text">
-                <a :href="link.url" class="mb-3 inline-block text-body-dark-11 hover:text-primary">
+                <a :href="link.url" class="mb-3 inline-block text-body-dark-11 hover:text-golden">
                   <i v-if="link.icon" :class="link.icon + ' mr-2'"></i> {{ link.text }}
                 </a>
               </li>

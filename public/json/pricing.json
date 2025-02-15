@@ -22,5 +22,11 @@
 		"description": "Perawatan wajah untuk kulit yang lebih segar.",
 		"price": 80000,
 		"image": "/img/haircut.jpg"
+	},
+	{
+		"name": "Hair Coloring",
+		"description": "Pewarnaan rambut dengan berbagai warna.",
+		"price": 80000,
+		"image": "/img/haircut.jpg"
 	}
 ]

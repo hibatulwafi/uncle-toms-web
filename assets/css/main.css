@@ -6,6 +6,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+.custom-text-gold {
+    @apply bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent;
+}
 
 *,
 ::before,
@@ -580,7 +583,7 @@ ol {
 strong {
     font-weight: 700;
     --tw-text-opacity: 1;
-    color: rgb(30 31 36 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 strong:where([data-web-theme=dark], [data-web-theme=dark] *) {
@@ -598,7 +601,7 @@ h6 {
     text-wrap: pretty;
     font-weight: 700;
     --tw-text-opacity: 1;
-    color: rgb(30 31 36 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 h1:where([data-web-theme=dark], [data-web-theme=dark] *),
@@ -844,7 +847,7 @@ p+p {
     width: 1rem;
     border-radius: 9999px;
     --tw-bg-opacity: 1;
-    background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity));
     animation: grid-loader 1.2s linear infinite;
 }
 
@@ -942,7 +945,7 @@ p+p {
 
 .ic-navbar.sticky .ic-navbar-logo {
     --tw-text-opacity: 1;
-    color: rgb(30 31 36 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .ic-navbar.sticky .ic-navbar-logo:where([data-web-theme=dark], [data-web-theme=dark] *) {
@@ -956,7 +959,7 @@ p+p {
 
 .ic-navbar.sticky .ic-navbar-toggler {
     --tw-text-opacity: 1;
-    color: rgb(30 31 36 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .ic-navbar.sticky .ic-navbar-toggler:where([data-web-theme=dark], [data-web-theme=dark] *) {
@@ -972,12 +975,12 @@ p+p {
 @media (min-width: 1024px) {
     .ic-navbar.sticky .ic-page-scroll {
         --tw-text-opacity: 1;
-        color: rgb(30 31 36 / var(--tw-text-opacity));
+        color: rgb(245 158 11 / var(--tw-text-opacity));
     }
 
     .ic-navbar.sticky .ic-page-scroll:hover {
         --tw-text-opacity: 1;
-        color: rgb(61 99 221 / var(--tw-text-opacity));
+        color: rgb(245 158 11 / var(--tw-text-opacity));
         opacity: 1;
     }
 
@@ -989,7 +992,7 @@ p+p {
 
 .ic-page-scroll.active {
     --tw-text-opacity: 1;
-    color: rgb(61 99 221 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -1001,14 +1004,14 @@ p+p {
 
     .ic-navbar.sticky .ic-page-scroll.active {
         --tw-text-opacity: 1;
-        color: rgb(61 99 221 / var(--tw-text-opacity));
+        color: rgb(245 158 11 / var(--tw-text-opacity));
         opacity: 1;
     }
 }
 
 .ic-navbar.sticky [data-web-trigger="web-theme"] {
     --tw-text-opacity: 1;
-    color: rgb(30 31 36 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .ic-navbar.sticky [data-web-trigger="web-theme"]:where([data-web-theme=dark], [data-web-theme=dark] *) {
@@ -1018,7 +1021,7 @@ p+p {
 
 .ic-navbar.sticky .btn-navbar {
     --tw-bg-opacity: 1;
-    background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
 .ic-navbar.sticky .btn-navbar:hover {
@@ -1071,7 +1074,7 @@ p+p {
 
 .tabs-nav .tabs-link.active {
     --tw-bg-opacity: 1;
-    background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1086,7 +1089,7 @@ p+p {
 
 .portfolio-menu button.active {
     --tw-bg-opacity: 1;
-    background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1122,7 +1125,7 @@ p+p {
     background-color: rgb(252 252 253 / var(--tw-bg-opacity));
     font-size: 22px;
     --tw-text-opacity: 1;
-    color: rgb(30 31 36 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
     --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1137,7 +1140,7 @@ p+p {
 .common-carousel .swiper-button-prev:hover,
 .common-carousel .swiper-button-next:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1145,7 +1148,7 @@ p+p {
 .common-carousel .swiper-button-prev:focus,
 .common-carousel .swiper-button-next:focus {
     --tw-bg-opacity: 1;
-    background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1731,7 +1734,7 @@ p+p {
 
 .\!bg-primary {
     --tw-bg-opacity: 1 !important;
-    background-color: rgb(61 99 221 / var(--tw-bg-opacity)) !important;
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-blue-500 {
@@ -1749,7 +1752,7 @@ p+p {
 }
 
 .bg-body-light-12\/10 {
-    background-color: rgb(30 31 36 / 0.1);
+    background-color: rgb(245 158 11 / 0.1);
 }
 
 .bg-green-400 {
@@ -1759,7 +1762,7 @@ p+p {
 
 .bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
 .bg-primary-color {
@@ -1782,7 +1785,7 @@ p+p {
 }
 
 .bg-primary\/10 {
-    background-color: rgb(61 99 221 / 0.1);
+    background-color: rgb(245 158 11 / 0.1);
 }
 
 .bg-red-500 {
@@ -2061,7 +2064,7 @@ p+p {
 
 .text-body-light-12 {
     --tw-text-opacity: 1;
-    color: rgb(30 31 36 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .text-inherit {
@@ -2070,7 +2073,7 @@ p+p {
 
 .text-primary {
     --tw-text-opacity: 1;
-    color: rgb(61 99 221 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .text-primary-color {
@@ -2125,7 +2128,7 @@ p+p {
 
 .ring-primary {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(61 99 221 / var(--tw-ring-opacity));
+    --tw-ring-color: rgb(245 158 11 / var(--tw-ring-opacity));
 }
 
 .grayscale {
@@ -2175,7 +2178,7 @@ p+p {
 
 .hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-primary-color:hover {
@@ -2204,7 +2207,7 @@ p+p {
 
 .hover\:text-primary:hover {
     --tw-text-opacity: 1;
-    color: rgb(61 99 221 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary-color:hover {
@@ -2241,7 +2244,7 @@ p+p {
 
 .focus\:border-primary:focus {
     --tw-border-opacity: 1;
-    border-color: rgb(61 99 221 / var(--tw-border-opacity));
+    border-color: rgb(245 158 11 / var(--tw-border-opacity));
 }
 
 .focus\:bg-green-500:focus {
@@ -2251,7 +2254,7 @@ p+p {
 
 .focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
 .focus\:bg-primary-color:focus {
@@ -2266,7 +2269,7 @@ p+p {
 
 .focus\:text-primary:focus {
     --tw-text-opacity: 1;
-    color: rgb(61 99 221 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .focus\:text-primary-color:focus {
@@ -2314,7 +2317,7 @@ p+p {
 
 .group:hover .group-hover\:text-primary {
     --tw-text-opacity: 1;
-    color: rgb(61 99 221 / var(--tw-text-opacity));
+    color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100 {

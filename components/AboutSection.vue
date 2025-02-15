@@ -1,37 +1,35 @@
 <template>
-  <section id="about" class="section-area">
+  <section id="about" class="section-area bg-body-light-12 dark:bg-body-dark-1">
     <div class="container">
       <div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
         <div class="w-full">
           <figure class="scroll-revealed max-w-[400px] mx-auto">
-            <img :src="about?.image" alt="About image" class="rounded-xl" />
+            <img :src="about?.image" alt="About image" class="rounded-xl max-h-96 w-full min-h-80 object-cover" />
           </figure>
         </div>
 
         <div class="w-full">
           <div class="scroll-revealed">
-            <h6 class="mb-2 block text-lg font-semibold text-primary">
+            <h6 class="mb-2 block text-lg font-semibold">
               {{ about?.title }}
             </h6>
-            <h2 class="mb-6">
+            <h2 class="mb-6 custom-text-gold">
               {{ about?.subtitle }}
             </h2>
           </div>
 
           <div class="tabs scroll-revealed">
             <nav class="tabs-nav flex flex-wrap gap-4 my-8" role="tablist" aria-label="About us tabs">
-              <button @click="activeTab = 'profile'"
-                :class="{ 'bg-primary text-primary-color': activeTab === 'profile' }"
-                class="tabs-link inline-block py-2 px-4 rounded-md bg-body-light-12/10 dark:bg-body-dark-12/10 font-medium hover:bg-primary hover:text-primary-color">
+              <button @click="activeTab = 'profile'" :class="{ 'bg-gold text-primary-dark-1': activeTab === 'profile' }"
+                class="tabs-link inline-block py-2 px-4 rounded-md bg-body-light-12/10 dark:bg-body-dark-12/10 font-medium hover:bg-gold hover:text-golden">
                 Our Profile
               </button>
-              <button @click="activeTab = 'vision'" :class="{ 'bg-primary text-primary-color': activeTab === 'vision' }"
-                class="tabs-link inline-block py-2 px-4 rounded-md bg-body-light-12/10 dark:bg-body-dark-12/10 font-medium hover:bg-primary hover:text-primary-color">
+              <button @click="activeTab = 'vision'" :class="{ 'bg-gold text-primary-dark-1': activeTab === 'vision' }"
+                class="tabs-link inline-block py-2 px-4 rounded-md bg-body-light-12/10 dark:bg-body-dark-12/10 font-medium hover:bg-gold hover:text-golden">
                 Our Vision
               </button>
-              <button @click="activeTab = 'history'"
-                :class="{ 'bg-primary text-primary-color': activeTab === 'history' }"
-                class="tabs-link inline-block py-2 px-4 rounded-md bg-body-light-12/10 dark:bg-body-dark-12/10 font-medium hover:bg-primary hover:text-primary-color">
+              <button @click="activeTab = 'history'" :class="{ 'bg-gold text-primary-dark-1': activeTab === 'history' }"
+                class="tabs-link inline-block py-2 px-4 rounded-md bg-body-light-12/10 dark:bg-body-dark-12/10 font-medium hover:bg-gold hover:text-golden">
                 Our History
               </button>
             </nav>

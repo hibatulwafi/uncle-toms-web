@@ -45,7 +45,7 @@ export default defineNuxtPlugin(() => {
       html = document.querySelector("html");
 
     window.addEventListener("load", function () {
-      let theme = localStorage.getItem("My_WebTheme") || "light";
+      let theme = localStorage.getItem("My_WebTheme") || "dark";
       webTheme.innerHTML = theme === "dark"
         ? '<i class="lni lni-night"></i>'
         : '<i class="lni lni-sun"></i>';

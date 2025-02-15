@@ -1,5 +1,5 @@
 <template>
-  <section id="call-action" class="section-area !bg-body-dark-1 !text-primary-color">
+  <section id="call-action" class="section-area !bg-primary-dark-1 !text-primary-color">
     <div class="container">
       <div class="scroll-revealed text-center  max-w-[750px] mx-auto">
         <h2 class="mb-8 text-inherit">
@@ -23,8 +23,8 @@
 
           <!-- Booking Button -->
           <button
-            class="px-6 py-2.5 font-semibold rounded-lg text-primary-dark-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 transition duration-300"
-            @click="bookNow">
+            class="px-6 py-2.5 font-semibold rounded-lg text-primary-dark-1 bg-gold hover:brightness-110 transition duration-300">
+
             Book Now 🔥
           </button>
         </div>

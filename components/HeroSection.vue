@@ -7,8 +7,8 @@
         <!-- Kolom Teks -->
         <div class="w-full px-5 lg:w-1/2">
           <div class="scroll-revealed mx-auto max-w-[780px] lg:text-left text-center">
-            <h1 class="mb-6 text-3xl font-bold leading-snug sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight 
-         bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+            <h1
+              class="mb-6 text-3xl font-bold leading-snug sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight custom-text-gold">
               {{ cmsStore.hero?.title || 'Loading...' }}
             </h1>
 
@@ -69,8 +69,7 @@
           </div>
 
           <button
-            class="px-6 py-2.5 font-semibold rounded-lg text-primary-dark-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 transition duration-300"
-            @click="bookNow">
+            class="px-6 py-2.5 font-semibold rounded-lg text-primary-dark-1 bg-gold hover:brightness-110 transition duration-300">
             {{ cmsStore.hero?.booking.label }}
           </button>
         </div>
