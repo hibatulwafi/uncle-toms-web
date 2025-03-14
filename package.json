@@ -1,5 +1,7 @@
 {
   "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@8.6.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

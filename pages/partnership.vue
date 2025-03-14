@@ -30,6 +30,7 @@ import ScrollUp from '~/components/ScrollUp.vue';
     </div>
   </div> -->
   <Navbar />
+  MITRA
   <main class="main relative">
     <!-- Hero section -->
     <HeroSection />

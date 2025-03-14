@@ -5,7 +5,7 @@ export const useCmsStore = defineStore('cms', {
     about: null,
     pricing: null,
     location: null,
-    caster: null,
+    capster: null,
     faq: null,
     bookingResponse: null
   }),

@@ -41,9 +41,9 @@
                 </li>
 
                 <li class="group relative">
-                  <a href="#caster"
+                  <a href="#capster"
                     class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-golden dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-golden-color lg:dark:text-golden-color lg:group-hover:text-golden lg:group-hover:opacity-70"
-                    role="menuitem">Caster</a>
+                    role="menuitem">Capster</a>
                 </li>
 
                 <li class="group relative">

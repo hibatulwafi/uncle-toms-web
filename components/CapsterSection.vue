@@ -1,9 +1,9 @@
 <template>
-  <section id="caster" class="section-area">
+  <section id="capster" class="section-area">
     <div class="container">
       <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
-        <h6 class="mb-2 block text-lg font-semibold">Caster</h6>
-        <h2 class="mb-6 custom-text-gold">Our Caster</h2>
+        <h6 class="mb-2 block text-lg font-semibold">Capster</h6>
+        <h2 class="mb-6 custom-text-gold">Our Capster</h2>
         <p>
           Meet our talented barbers who are ready to give you the best haircut experience.
         </p>
@@ -13,8 +13,8 @@
       <div class="relative w-full overflow-hidden bg-black py-5">
         <div class="marquee-container">
           <div class="marquee-content" :style="{ transform: `translateX(${translateX}px)` }">
-            <figure v-for="(caster, index) in duplicatedCasters" :key="index" class="h-[220px] w-[220px]">
-              <img :src="caster.image" :alt="caster.name"
+            <figure v-for="(capster, index) in duplicatedCasters" :key="index" class="h-[220px] w-[220px]">
+              <img :src="capster.image" :alt="capster.name"
                 class="h-full w-full object-cover grayscale hover:grayscale-0 transition duration-300" />
             </figure>
           </div>
@@ -36,8 +36,8 @@ const speed = 1; // Kecepatan marquee
 let interval;
 
 onMounted(async () => {
-  await cmsStore.fetchCmsData("caster");
-  casters.value = cmsStore.caster.casters || [];
+  await cmsStore.fetchCmsData("capster");
+  casters.value = cmsStore.capster.casters || [];
 
   startMarquee();
 });
