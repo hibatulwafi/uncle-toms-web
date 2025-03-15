@@ -1,34 +1,62 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { onMounted, ref } from 'vue';
+import Loading from '~/components/Loading.vue';
 import Navbar from '~/components/Navbar.vue';
 import HeroSection from '~/components/HeroSection.vue';
 import AboutSection from '~/components/AboutSection.vue';
 import PricingSection from '~/components/PricingSection.vue';
 import LocationsSection from '~/components/LocationsSection.vue';
-import CasterSection from '~/components/CapsterSection.vue';
+import CapsterSection from '~/components/CapsterSection.vue';
 import FaqSection from '~/components/FaqSection.vue';
-import ContactSection from '~/components/ContactSection.vue';
 import CallActionSection from '~/components/CallActionSection.vue';
+import PartnershipSection from '~/components/PartnershipSection.vue';
 import Footer from '~/components/Footer.vue';
 import ScrollUp from '~/components/ScrollUp.vue';
+
+onMounted(() => {
+  "use strict";
+
+  //Web Theme
+  const webTheme = document.querySelector("[data-web-trigger=web-theme]");
+  const html = document.querySelector("html");
+
+  let theme = localStorage.getItem("My_WebTheme") || "dark";
+
+  if (webTheme) {
+    webTheme.innerHTML = theme === "dark"
+      ? '<i class="lni lni-moon-half-right-5"></i>'
+      : '<i class="lni lni-sun-1"></i>';
+  }
+
+  if (html) {
+    html.dataset.webTheme = theme;
+  }
+
+  localStorage.setItem("My_WebTheme", theme);
+
+  // Web theme click event
+  const webThemeButton = document.querySelector("[data-web-trigger=web-theme]");
+  const htmlElement = document.querySelector("html");
+  webThemeButton?.addEventListener("click", function () {
+    let theme = localStorage.getItem("My_WebTheme") === "dark" ? "light" : "dark";
+    if (webThemeButton) {
+      webThemeButton.innerHTML = theme === "dark"
+        ? '<i class="lni lni-moon-half-right-5"></i>'
+        : '<i class="lni lni-sun-1"></i>';
+    }
+
+    if (htmlElement) {
+      htmlElement.dataset.webTheme = theme;
+    }
+    localStorage.setItem("My_WebTheme", theme);
+  });
+
+});
+
 </script>
 
 <template>
-  <!-- <div
-    class="hover:text-golden fixed top-0 bottom-0 left-0 right-0 z-[99999] flex items-center justify-center bg-primary-light-1 dark:bg-primary-dark-1 opacity-100 visible pointer-events-auto"
-    role="status" aria-live="polite" aria-atomic="true" aria-label="Loading...">
-    <div class="grid-loader">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div> -->
+  <Loading />
   <Navbar />
   <main class="main relative">
     <!-- Hero section -->
@@ -42,11 +70,11 @@ import ScrollUp from '~/components/ScrollUp.vue';
     <!-- Call action section -->
     <CallActionSection />
     <!-- Capster section -->
-    <CasterSection />
+    <CapsterSection />
     <!-- FAQ section -->
     <FaqSection />
-    <!-- Contact section -->
-    <!-- <ContactSection /> -->
+    <!-- Partnership section -->
+    <PartnershipSection />
   </main>
   <!-- Footer -->
   <Footer />

@@ -6,7 +6,7 @@
         <div class="col-12 order-first lg:col-4">
           <div class="w-full">
             <a href="/" class="inline-block mb-2">
-              <img :src="footerData.logo" class="h-28" alt="Barbershop Logo" />
+              <img :src="footerData.logo" class="h-24 md:h-24" alt="Barbershop Logo" />
             </a>
             <p class="mb-4 text-body-dark-11">{{ footerData.description }}</p>
             <div class="-mx-3 flex items-center">

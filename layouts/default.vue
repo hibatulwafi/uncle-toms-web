@@ -11,10 +11,6 @@ useHead({
     { property: "og:image", content: "/assets/img/ut-logo.png." },
   ],
   link: [
-    { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" },
-    { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" },
-    { rel: "stylesheet", href: "https://cdn.lineicons.com/4.0/lineicons.css" },
-
     // Favicon menggunakan ut-logo.png
     { rel: "icon", type: "image/png", href: "./assets/img/ut-logo.png" },
     { rel: "apple-touch-icon", href: "./assets/img/ut-logo.png" }

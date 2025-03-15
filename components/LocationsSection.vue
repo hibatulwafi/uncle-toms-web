@@ -31,7 +31,7 @@
                   <div class="inline-block relative">
                     <a :href="item.image"
                       class="portfolio-box text-[1.75rem] text-primary-color bg-gold hover:brightness-110 z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center">
-                      <i class="lni lni-map"></i>
+                      <i class="lni lni-map-marker-5"></i>
                     </a>
                   </div>
                 </div>

@@ -14,7 +14,7 @@
         <div v-for="(faq, index) in faqs" :key="index" class="scroll-revealed flex">
           <div
             class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-gold text-primary-color text-[28px] sm:mr-6 sm:h-[60px] sm:max-w-[60px] sm:text-[32px]">
-            <i class="lni lni-question-circle"></i>
+            <i class="lni lni-question-mark-circle"></i>
           </div>
           <div class="w-full">
             <h3

@@ -1,33 +1,18 @@
 <template>
   <section id="call-action" class="section-area !bg-primary-dark-1 !text-primary-color">
-    <div class="container">
+    <div class="container pb-3">
       <div class="scroll-revealed text-center  max-w-[750px] mx-auto">
-        <h2 class="mb-8 text-inherit">
+        <h2 class="mb-8 text-inherit text-lg md:text-xl">
           💈 Look Sharp, Feel Confident 💈
         </h2>
         <p class="mb-8">
           A great haircut is more than just a style—it’s a statement.
-          At <strong>[Your Barbershop Name]</strong>, we provide top-notch grooming services
+          At <strong>Uncle Tom's</strong>, we provide top-notch grooming services
           with expert techniques, modern trends, and a comfortable atmosphere.
         </p>
+        <!-- Booking Button -->
+        <ButtonBooking />
 
-        <div
-          class="relative left-1/2 -translate-x-1/2 bg-black bg-opacity-75 shadow-lg rounded-xl p-3 md:w-[500px] w-2/4 flex items-end gap-3 z-10">
-
-          <!-- Date & Time Selection -->
-          <div class="flex-1">
-            <p class="text-gray-500 text-sm mb-1">Select Your Appointment Date & Time</p>
-            <input type="datetime-local" v-model="selectedDateTime"
-              class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:outline-none" />
-          </div>
-
-          <!-- Booking Button -->
-          <button
-            class="px-6 py-2.5 font-semibold rounded-lg text-primary-dark-1 bg-gold hover:brightness-110 transition duration-300">
-
-            Book Now 🔥
-          </button>
-        </div>
       </div>
     </div>
   </section>
@@ -35,6 +20,7 @@
 
 <script setup>
 const selectedDateTime = ref("");
+import ButtonBooking from '~/components/ButtonBooking.vue';
 
 
 const bookNow = () => {

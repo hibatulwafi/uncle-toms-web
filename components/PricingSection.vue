@@ -16,7 +16,7 @@
         }" class="pb-10">
         <swiper-slide v-for="(service, index) in pricing" :key="index">
           <div
-            class="rounded-lg border-2 border-gold bg-black bg-opacity-30  p-4 text-center transition hover:shadow-lg h-full flex flex-col shadow-lg">
+            class="rounded-lg border-2 border-gold bg-black bg-opacity-30 p-4 text-center transition hover:shadow-lg h-full flex flex-col shadow-lg">
             <img :src="service.image" :alt="service.name" class="w-full h-52 object-cover rounded-t-lg" />
             <div class="p-4 flex-grow flex flex-col justify-between">
               <!-- Nama Service dan Harga dalam satu baris -->
@@ -30,6 +30,7 @@
             </div>
           </div>
         </swiper-slide>
+
       </swiper>
     </div>
   </section>

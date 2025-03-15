@@ -69,12 +69,12 @@
         {
           "text": "info@barbershop.com",
           "url": "mailto:info@barbershop.com",
-          "icon": "lni lni-envelope"
+          "icon": "lni lni-envelope-1"
         },
         {
           "text": "Find Us",
           "url": "/location",
-          "icon": "lni lni-map-marker"
+          "icon": "lni lni-map-marker-5"
         }
       ]
     }

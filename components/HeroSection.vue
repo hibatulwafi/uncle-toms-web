@@ -13,16 +13,16 @@
             </h1>
 
             <p v-for="(desc, index) in cmsStore.hero?.description" :key="index"
-              class="mb-6 max-w-[600px] text-base text-primary-color sm:text-lg sm:leading-normal">
+              class="md:mb-6 max-w-[600px] text-base text-primary-color sm:text-lg sm:leading-normal">
               {{ desc }}
             </p>
 
-            <ul class="mb-10 flex flex-wrap items-center justify-center lg:justify-start gap-4 md:gap-5">
+            <ul class="md:mb-10 flex flex-wrap items-center justify-center lg:justify-start gap-4 md:gap-5">
               <!-- Tombol Download Play Store -->
               <li>
                 <a :href="cmsStore.hero?.download_links.playstore" target="_blank">
                   <img src="/assets/img/download-playstore.svg" alt="Google Play"
-                    class="h-36 mr-2 transition-opacity duration-300 hover:opacity-75">
+                    class="h-24 md:h-36 w-36 mr-2 transition-opacity duration-300 hover:opacity-75 object-cover" />
                 </a>
               </li>
 
@@ -30,7 +30,7 @@
               <li>
                 <a :href="cmsStore.hero?.download_links.appstore" target="_blank">
                   <img src="/assets/img/download-appstore.svg" alt="App Store"
-                    class="h-36 mr-2 transition-opacity duration-300 hover:opacity-75">
+                    class="h-24 md:h-36 w-36 mr-2 transition-opacity duration-300 hover:opacity-75 object-cover" />
                 </a>
               </li>
             </ul>
@@ -39,8 +39,8 @@
         </div>
 
         <!-- Kolom Gambar -->
-        <div class="relative w-full px-5 lg:w-1/2">
-          <div class="relative mx-auto max-w-[845px] h-[500px] z-0">
+        <div class="relative w-full md:px-5 lg:w-1/2">
+          <div class="relative mx-auto max-w-[845px] h-[300px] md:h-[500px] z-0">
             <!-- Dots Background -->
             <div class="absolute left-[10%] bottom-[15%] z-[-1]">
               <img src="/assets/img/dots.svg" alt="" class="w-[120px]" />
@@ -58,23 +58,10 @@
             </figure>
           </div>
         </div>
-
-        <!-- Booking Section -->
-        <div
-          class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black bg-opacity-75 shadow-lg rounded-xl p-3 md:w-[500px] w-2/4 flex items-end gap-3 z-10">
-          <div class="flex-1">
-            <p class="text-gray-500 text-sm mb-1">{{ cmsStore.hero?.booking.placeholder }}</p>
-            <input type="datetime-local" v-model="selectedDateTime"
-              class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:outline-none" />
-          </div>
-
-          <button
-            class="px-6 py-2.5 font-semibold rounded-lg text-primary-dark-1 bg-gold hover:brightness-110 transition duration-300">
-            {{ cmsStore.hero?.booking.label }}
-          </button>
-        </div>
-
       </div>
+
+      <!-- Booking Section -->
+      <ButtonBooking />
     </div>
   </section>
 </template>
@@ -82,10 +69,10 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useCmsStore } from "@/stores/cms";
+import ButtonBooking from '~/components/ButtonBooking.vue';
 
 const cmsStore = useCmsStore();
 const currentIndex = ref(0);
-const selectedDateTime = ref("");
 
 // Fetch data CMS (Hero)
 onMounted(async () => {
@@ -99,13 +86,6 @@ const nextImage = () => {
   }
 };
 
-const bookNow = () => {
-  if (!selectedDateTime.value) {
-    alert("Please select a date and time first!");
-  } else {
-    alert(`Booking confirmed for: ${selectedDateTime.value}`);
-  }
-};
 </script>
 
 <style scoped>
