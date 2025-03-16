@@ -157,7 +157,7 @@ const submitForm = async () => {
             Bergabunglah dengan jaringan mitra kami yang berkembang dan raih kesuksesan bersama.
           </p>
 
-          <a href="#review"
+          <a href="#existing"
             class="bg-gold hover:brightness-110 text-primary-dark-1 font-bold py-3 px-6 rounded transition-transform duration-300 hover:scale-110 hover:text-primary-dark-2 inline-flex items-center whitespace-nowrap">
             Existing Partner
             <i class="lni lni-chevron-down font-bold text-xl ml-2"></i>
@@ -166,7 +166,7 @@ const submitForm = async () => {
       </div>
     </section>
 
-    <section class="bg-gray-800 py-12 md:px-32 px-6 mx-auto">
+    <section id="existing" class="bg-gray-800 py-12 md:px-32 px-6 mx-auto">
       <div class="container mx-auto text-center">
 
         <h6 class="mb-2 block text-lg font-semibold text-white text-center">
@@ -222,7 +222,7 @@ const submitForm = async () => {
                 <li>Dukungan Teknis Prioritas</li>
               </ul>
             </div>
-            <a href="#review"
+            <a href="#form"
               class="bg-gold hover:brightness-110 text-primary-dark-1 font-bold py-3 px-6 rounded transition-transform duration-300 hover:scale-110 hover:text-primary-dark-2 inline-flex items-center whitespace-nowrap">
               Daftar Partnership
               <i class="lni lni-chevron-down font-bold text-xl ml-2"></i>
@@ -236,7 +236,7 @@ const submitForm = async () => {
       </div>
     </section>
 
-    <section class="container mx-auto py-12 bg-body-dark-1">
+    <section id="form" class="container mx-auto py-12 bg-body-dark-1">
       <h6 class="mb-2 block text-lg font-semibold text-white text-center">
         Join Us!
       </h6>

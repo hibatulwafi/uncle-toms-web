@@ -20,7 +20,7 @@ const router = useRouter();
 
 onMounted(() => {
     if (localStorage.getItem('accessGranted') !== 'true') {
-        router.push('/login');
+        router.push('/dashboard/login');
     }
 });
 </script>
