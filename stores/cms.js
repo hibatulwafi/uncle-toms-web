@@ -11,6 +11,7 @@ export const useCmsStore = defineStore('cms', {
     loading: true,
     timeout: null,
     kemitraan: [],
+    booking: [],
 
   }),
 
@@ -41,9 +42,22 @@ export const useCmsStore = defineStore('cms', {
       }
     },
 
-    async postBooking(data) {
-      console.log('Simulasi mengirim data booking:', data);
-      this.bookingResponse = { success: true, message: 'Booking berhasil!' };
+    async saveBooking(data) {
+      try {
+        const response = await $fetch('/api/booking', {
+          method: 'POST',
+          body: data,
+        });
+        if (response.success) {
+          this.booking.push(data);
+          return { success: true, message: 'Data berhasil disimpan.' };
+        } else {
+          return { success: false, message: 'Gagal menyimpan data .' };
+        }
+      } catch (error) {
+        console.error('Error saving :', error);
+        return { success: false, message: 'Terjadi kesalahan saat menyimpan data .' };
+      }
     },
 
     async saveKemitraan(data) {

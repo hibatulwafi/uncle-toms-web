@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue';
 import { useCmsStore } from '@/stores/cms';
 const cmsStore = useCmsStore(); // Inisialisasi store
 
-import Navbar from '~/components/Navbar.vue';
+import Navbar from '~/components/NavbarPartnership.vue';
 import Footer from '~/components/Footer.vue';
 import ScrollUp from '~/components/ScrollUp.vue';
 // ... (formData, provinsiList, onMounted, submitForm tetap sama)
@@ -210,7 +210,7 @@ const submitForm = async () => {
               <p class="text-red-400 text-xl md:text-3xl line-through mb-2">Rp 60.000.000</p>
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-xl md:text-5xl font-bold text-white">Rp 30.000.000</h3>
-                <span class="bg-green-600 text-white text-sm font-semibold py-1 px-3 rounded-full">Dics 50%</span>
+                <!-- <span class="bg-green-600 text-white text-sm font-semibold py-1 px-3 rounded-full">Dics 50%</span> -->
               </div>
               <ul class="list-disc list-inside text-gray-300 mb-4">
                 <li>Akses Eksklusif ke Jaringan Mitra Kami</li>
