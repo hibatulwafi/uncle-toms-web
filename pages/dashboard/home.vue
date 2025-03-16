@@ -50,7 +50,13 @@ onMounted(async () => {
 const fetchKemitraanData = async () => {
 	try {
 		const response = await $fetch('/api/kemitraan');
-		kemitraanData.value = response;
+		kemitraanData.value = response.map((item) => {
+			if (item.timestamp && typeof item.timestamp.seconds === 'number') {
+				const date = new Date(item.timestamp.seconds * 1000 + item.timestamp.nanoseconds / 1000000);
+				return { ...item, timestamp: date }; // Mengganti timestamp dengan objek Date
+			}
+			return item;
+		});
 	} catch (error) {
 		console.error('Error fetching kemitraan data:', error);
 	}
@@ -64,7 +70,7 @@ const dailyCounts = computed(() => {
 	const counts = {};
 	const today = new Date();
 
-	for (let i = 29; i >= 0; i--) { // Ubah 6 menjadi 29
+	for (let i = 29; i >= 0; i--) {
 		const date = new Date(today);
 		date.setDate(today.getDate() - i);
 		const dateString = date.toISOString().split('T')[0];
@@ -72,9 +78,11 @@ const dailyCounts = computed(() => {
 	}
 
 	kemitraanData.value.forEach((item) => {
-		const dateString = item.timestamp.split('T')[0];
-		if (counts[dateString] !== undefined) {
-			counts[dateString]++;
+		if (item.timestamp instanceof Date) {
+			const dateString = item.timestamp.toISOString().split('T')[0];
+			if (counts[dateString] !== undefined) {
+				counts[dateString]++;
+			}
 		}
 	});
 
@@ -85,7 +93,7 @@ const dailyLabels = computed(() => {
 	const today = new Date();
 	const labels = [];
 
-	for (let i = 29; i >= 0; i--) { // Ubah 6 menjadi 29
+	for (let i = 29; i >= 0; i--) {
 		const date = new Date(today);
 		date.setDate(today.getDate() - i);
 		const dateString = date.toISOString().split('T')[0];
@@ -109,8 +117,8 @@ const createChart = () => {
 				}],
 			},
 			options: {
-				responsive: true, // Tambahkan responsive: true
-				maintainAspectRatio: false, // Tambahkan maintainAspectRatio: false
+				responsive: true,
+				maintainAspectRatio: false,
 				scales: {
 					y: {
 						beginAtZero: true,

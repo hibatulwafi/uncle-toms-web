@@ -132,10 +132,10 @@ const submitForm = async () => {
   <div class="bg-gray-900 text-white">
     <section id="video" class="md:px-32 px-6 mx-auto py-12">
 
-      <h6 class="mb-2 block text-lg font-semibold text-white text-center">
+      <h6 class="mb-2 block md:text-lg font-semibold text-white text-center">
         Video Partnership
       </h6>
-      <h2 class="mb-6 text-center">
+      <h2 class="mb-6 text-xl md:text-4xl text-center">
         Become Our Premium Partner
       </h2>
 
@@ -169,10 +169,10 @@ const submitForm = async () => {
     <section id="existing" class="bg-gray-800 py-12 md:px-32 px-6 mx-auto">
       <div class="container mx-auto text-center">
 
-        <h6 class="mb-2 block text-lg font-semibold text-white text-center">
+        <h6 class="mb-2 block md:text-lg font-semibold text-white text-center">
           Existing Partner
         </h6>
-        <h2 class="mb-6 text-center">
+        <h2 class="mb-6 text-xl md:text-4xl text-center">
           Testimony from our partners
         </h2>
 
@@ -196,10 +196,9 @@ const submitForm = async () => {
 
     <section class="py-12 md:px-32 px-6 mx-auto">
 
-      <h6 class="mb-2 block text-lg font-semibold text-white text-center">
-        Partner Package
-      </h6>
-      <h2 class="mb-6 text-center">
+      <h6 class="mb-2 block md:text-lg font-semibold text-white text-center">
+        Partner Package </h6>
+      <h2 class="mb-6 text-xl md:text-4xl text-center">
         Paket Kemitraan Eksklusif
       </h2>
 
@@ -208,10 +207,10 @@ const submitForm = async () => {
           <div class="bg-gray-700 rounded shadow p-8">
             <div>
               <h2 class="text-2xl font-semibold mb-4 text-center">Hanya Dengan</h2>
-              <p class="text-red-400 text-3xl line-through mb-2">Rp 60.000.000</p>
+              <p class="text-red-400 text-xl md:text-3xl line-through mb-2">Rp 60.000.000</p>
               <div class="flex items-center justify-between mb-4">
-                <h3 class="text-5xl font-bold text-white">Rp 30.000.000</h3>
-                <span class="bg-green-600 text-white text-sm font-semibold py-1 px-3 rounded-full">Diskon 50%</span>
+                <h3 class="text-xl md:text-5xl font-bold text-white">Rp 30.000.000</h3>
+                <span class="bg-green-600 text-white text-sm font-semibold py-1 px-3 rounded-full">Dics 50%</span>
               </div>
               <ul class="list-disc list-inside text-gray-300 mb-4">
                 <li>Akses Eksklusif ke Jaringan Mitra Kami</li>
@@ -237,10 +236,11 @@ const submitForm = async () => {
     </section>
 
     <section id="form" class="container mx-auto py-12 bg-body-dark-1">
-      <h6 class="mb-2 block text-lg font-semibold text-white text-center">
+
+      <h6 class="mb-2 block md:text-lg font-semibold text-white text-center">
         Join Us!
       </h6>
-      <h2 class="mb-6 text-center">
+      <h2 class="mb-6 text-xl md:text-4xl text-center">
         Formulir Pendaftaran Kemitraan
       </h2>
 

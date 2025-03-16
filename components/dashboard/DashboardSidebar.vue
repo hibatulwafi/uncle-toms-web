@@ -36,6 +36,15 @@
             <span v-if="isExpanded"> Home </span>
           </NuxtLink>
         </li>
+
+        <li class="mb-2">
+          <NuxtLink to="/dashboard/booking" class="flex items-center p-2 hover:bg-gray-700 text-white">
+            <span class="mr-2">
+              <i class="lni lni-wallet-1 text-white"></i>
+            </span>
+            <span v-if="isExpanded">Booking</span>
+          </NuxtLink>
+        </li>
         <li class="mb-2">
           <NuxtLink to="/dashboard/partnership" class="flex items-center p-2 hover:bg-gray-700 text-white">
             <span class="mr-2">

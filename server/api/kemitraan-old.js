@@ -1,17 +1,26 @@
 // server/api/kemitraan.js
+import fs from 'fs/promises';
+import path from 'path';
 import { defineEventHandler, readBody } from 'h3';
-import { db } from '../../firebaseConfig'; // Sesuaikan path
-import { collection, addDoc, getDocs, serverTimestamp } from 'firebase/firestore';
 
 export default defineEventHandler(async (event) => {
-  const kemitraanCollection = collection(db, 'partnership');
+  const filePath = path.resolve('public/json/data-kemitraan.json');
 
   if (event.node.req.method === 'POST') {
     try {
       const body = await readBody(event);
-      // Tambahkan timestamp server
-      body.timestamp = serverTimestamp();
-      await addDoc(kemitraanCollection, body);
+      let data = [];
+
+      try {
+        const fileContent = await fs.readFile(filePath, 'utf8');
+        data = JSON.parse(fileContent);
+      } catch (readError) {
+        // Jika file tidak ada atau kosong, biarkan data tetap array kosong
+      }
+
+      data.push(body);
+      await fs.writeFile(filePath, JSON.stringify(data, null, 2));
+
       return { success: true, message: 'Data kemitraan berhasil disimpan.' };
     } catch (error) {
       console.error('Error saving data:', error);
@@ -19,11 +28,8 @@ export default defineEventHandler(async (event) => {
     }
   } else if (event.node.req.method === 'GET') {
     try {
-      const querySnapshot = await getDocs(kemitraanCollection);
-      const data = querySnapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
+      const fileContent = await fs.readFile(filePath, 'utf8');
+      const data = JSON.parse(fileContent);
       return data;
     } catch (error) {
       console.error('Error reading data:', error);

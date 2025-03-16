@@ -27,7 +27,7 @@
             <td class="py-2 px-4 border-b">{{ item.email }}</td>
             <td class="py-2 px-4 border-b">{{ item.domisili }}</td>
             <td class="py-2 px-4 border-b">{{ item.kota }}</td>
-            <td class="py-2 px-4 border-b">{{ formatTimestamp(item.timestamp) }}</td>
+            <td class="py-2 px-4 border-b"> {{ formatDate(item.timestamp) }}</td>
           </tr>
         </tbody>
       </table>
@@ -56,22 +56,19 @@ const searchQuery = ref('');
 const currentPage = ref(1);
 const itemsPerPage = 10;
 
-
-const formatTimestamp = (timestamp) => {
-  if (!timestamp) return '';
-
-  const date = new Date(timestamp);
-  const day = date.getDate();
-  const monthNames = [
-    'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
-    'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember',
-  ];
-  const month = monthNames[date.getMonth()];
-  const year = date.getFullYear();
-  const hours = String(date.getHours()).padStart(2, '0');
-  const minutes = String(date.getMinutes()).padStart(2, '0');
-
-  return `${day} ${month} ${year}, ${hours}:${minutes}`;
+const formatDate = (timestamp) => {
+  if (timestamp && typeof timestamp.seconds === 'number') {
+    const date = new Date(timestamp.seconds * 1000 + timestamp.nanoseconds / 1000000);
+    return date.toLocaleDateString('id-ID', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+    });
+  }
+  return 'Tanggal tidak tersedia';
 };
 
 const fetchKemitraanData = async () => {

@@ -52,7 +52,6 @@ export const useCmsStore = defineStore('cms', {
           method: 'POST',
           body: data,
         });
-
         if (response.success) {
           this.kemitraan.push(data);
           return { success: true, message: 'Data kemitraan berhasil disimpan.' };
