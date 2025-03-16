@@ -8,20 +8,21 @@ export const useCmsStore = defineStore('cms', {
     capster: null,
     faq: null,
     bookingResponse: null,
-    loading: true, // Tambahkan state loading
-    timeout: null, // Tambahkan state timeout
+    loading: true,
+    timeout: null,
+    kemitraan: [],
+
   }),
 
   actions: {
     async fetchCmsData(endpoint) {
-      this.loading = true; // Set loading ke true saat fetch dimulai
+      this.loading = true;
       this.timeout = setTimeout(() => {
         if (this[endpoint] === null) {
           this.loading = false;
-          // Redirect ke halaman 404
           window.location.href = '/404';
         }
-      }, 10000); // 10 detik timeout
+      }, 10000);
 
       try {
         const response = await fetch(`/json/${endpoint}.json`);
@@ -43,6 +44,25 @@ export const useCmsStore = defineStore('cms', {
     async postBooking(data) {
       console.log('Simulasi mengirim data booking:', data);
       this.bookingResponse = { success: true, message: 'Booking berhasil!' };
+    },
+
+    async saveKemitraan(data) {
+      try {
+        const response = await $fetch('/api/kemitraan', {
+          method: 'POST',
+          body: data,
+        });
+
+        if (response.success) {
+          this.kemitraan.push(data);
+          return { success: true, message: 'Data kemitraan berhasil disimpan.' };
+        } else {
+          return { success: false, message: 'Gagal menyimpan data kemitraan.' };
+        }
+      } catch (error) {
+        console.error('Error saving kemitraan:', error);
+        return { success: false, message: 'Terjadi kesalahan saat menyimpan data kemitraan.' };
+      }
     },
   },
 });
